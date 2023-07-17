@@ -34,15 +34,11 @@ Before applying a machine learning algorithm on the data to solve the problem,an
 
 ### Distributions of the variables/features.
 
-![features distributions](https://github.com/harul9503/car_mpg_predict/blob/master/cars_dist.png)
-
 * The acceleration of the cars in the data is normally distributed and the most of the cars have an acceleration of 15 meters per second squared.
 * Half of the total number of cars (51.3%) in the data have 4 cylinders.
 * Our output/dependent variable (mpg) is slightly skewed to the right.
 
 ### Relationship between the Miles Per Gallon (mpg) and the other features.
-
-![heatmap](https://github.com/harul9503/car_mpg_predict/blob/master/cars_corr.png)
 
 * We can see that there is a relationship between the mpg variable and the other variables and this satisfies the first assumption of Linear regression.
 * There is a strong negative correlation between the displacement,horsepower,weight,and cylinders.This implies that,as any one of those variables increases,the mpg decreases.
@@ -63,9 +59,6 @@ After making a feature selection,the variables I used in the prediction are the 
   Mean Squared Error: 8.888595699098659
   
 I therefore made predictions using the predictor varibles to see how well the model predicts and visualized the actual mpg values recorded and the mpg values predicted by the model to see how close our predictions are to the actual values.
-
-
-![predicted mpg](https://github.com/harul9503/car_mpg_predict/blob/master/CarsMPG_predicted.png)
 
 
 We can see from the above scatter plot that our model made a good predictions as the values of the actual mpg and the predicted mpg are very close to each other.We can confidently say that we have succeeded in training a model that predicts the Mileage Per Gallon (mpg) of a car given the acceleration,model,origin and the horsepower of a car.
